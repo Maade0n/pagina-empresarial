@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kriegger</title>
+    <!-- Aquí enlazamos el archivo styles.css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Kriegger</h1>
+    <button id="btn-conocenos">Conócenos</button>
+
+    <div id="seccion-conocenos" style="display: none;">
+        <p>Somos una tienda de retail, nuestros colaboradores se mueven por el mundo para conseguir los pares más exclusivos del mercado. Todos nuestros productos están verificados por expertos.</p>
+        <p><strong>Misión:</strong> Ser la opción de todos los amantes de la moda para conseguir el calzado que tanto desean.</p>
+        <p><strong>Visión:</strong> Ser líderes en innovación y moda de calzado.</p>
+    </div>
+    </header>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos destacados</h2>
+        <div class="project">
+            <h3>Colaboraciones</h3>
+            <p>¿Tu artista y marca favorita trabajaron juntos? echa un vistazo.</p>
+            <img src="imagenes/travis.jpeg" alt="Colaboraciones">
+            <p class="nombre-calzado">Nike x Travis Scott</p>
+        </div>
+        <div class="project">
+            <h3>Por tiempo limitado</h3>
+            <p>Diseños únicos por temporada. ¡Corre por el tuyo!.</p>
+            <img src="imagenes/temporada.jpeg" alt="Temporada">
+            <p class="nombre-calzado">Nike air force 1 WB</p>
+        </div>
+        <div class="project">
+            <h3>Próximos lanzamientos</h3>
+            <p>Revisa las sorpresas que tenemos proximamente para ti.</p>
+            <img src="imagenes/lanzamientos.jpeg" alt="Proximamente">
+            <p class="nombre-calzado">Nike Speed Upcoming</p>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto"></section>
+        <h2>Suscríbete</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="tuemail@ejemplo.com" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.facebook.com/nike/?locale=es_LA">Facebook</a> | <a href="https://www.instagram.com/nike/">Instagram</a> | <a href="https://www.tiktok.com/@nike?lang=es">TikTok</a>
+        <p>&copy; 2025 Kriegger. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Referencia al botón y la sección
+        const btnConocenos = document.getElementById('btn-conocenos');
+        const seccionConocenos = document.getElementById('seccion-conocenos');
+    
+        // Evento para mostrar/ocultar la sección
+        btnConocenos.addEventListener('click', () => {
+            if (seccionConocenos.style.display === 'none') {
+                seccionConocenos.style.display = 'block';
+            } else {
+                seccionConocenos.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
+
